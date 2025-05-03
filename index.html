@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  <title>Binner</title>
+  <title>Biner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="desain.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="biner" style="height: 100%;">
+  
+  <style>
+      *{
+        color: aliceblue;
+      }
+      :root{
+        --gradeGray :linear-gradient(to right, #bdc3c7, #2c3e50);
+        --HitamBiru:linear-gradient(145deg,rgba(30, 35, 38, 1) 11%, rgba(35, 133, 150, 1) 68%, rgba(57, 194, 204, 1) 100%);
+        --serverQuik:linear-gradient(to right, #485563, #29323c);
+        --liesBeyond :linear-gradient(to right, #f0f2f0, #000c40);
+      }
+
+      .extrabold:hover{
+        font-weight: 800;
+      }
+
+      .hdr{
+        background-image: var(--gradeGray);
+        background-size: 150%;
+        animation: bgkiri 2s infinite alternate-reverse;
+        background-position: right;
+      }
+
+      @keyframes bgkiri{
+        0%{
+          background-position: right;
+        }
+
+        100%{
+          background-position: left;
+        }
+        
+      }
+
+      
+      .tombol {
+        background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .tombol:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+            
+      .biner{
+        background-image: url('foto/biner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+
+      .noto-sans-uniquifier {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+          
+      }
+      .container {
+        padding: 30px;
+      }
+      .container h2{
+        text-align: center;
+      }
+      .container label, select, input {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      .container input:focus{
+        background-color: #bed3e1;
+      }
+      
+      .sq{ 
+        background-image: var(--serverQuik);
+      }
+          
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .htmb{
+        background-image: var(--HitamBiru);
+      }
+
+      .gradeGray{
+        background-size: 200% auto;
+        animation: bgc 1s infinite alternate-reverse;
+        background-image: var(--gradeGray);
+      }
+
+      @keyframes bgc{
+        0%{
+          background-position: right;
+        }
+
+        100%{
+          background-position: center;
+        }
+      }
+  </style>
+
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg hdr p-3 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand noto-sans-uniquifier" href="index.html">ISPK</a>
+
+       <!-- BAGIAN HUMBURGER/TOMBOL -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="desimal.html">Desimal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="#biner">Biner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="heksaD.html">HeksaD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="Oktal.html">Oktal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="profil.html">Profil Developer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <div class="biner d-flex">
+    <div class="m-auto text-center" style="backdrop-filter: blur(10px); padding: 30px; border-radius: 20px;" data-aos="zoom-out-up">
+      <h3 class="text-white extrabold text-decoration-underline">DHO TO BINER</h3>
+      <p class="text-white sm:hidden">Ayo ubah bilangan yang ingin kamu inginkan ke dalam angka biner dengan cepat <br>tanpa harus menghitung dari awal dengan website ini akan mempermudah <br>urusan kamu dalam mengerjakan tugas dan lain-lainnya seperlu kamu. Gunakan <br>sebaiknya dan jangan lupa untuk mengenal siapa developernya ya. </p>
+    </div>
+   </div>
+
+
+   <main class="p-4 overflow-hidden" >
+    <div class="mb-3 text-center row " style="max-width:100%;">
+      <div class="row g-0 col-12 col-lg mb-3">
+        <div class="p-lg-5" style="backdrop-filter: blur(10px); border-radius: 20px; padding: 30px;">
+          <div >
+            <h5 class="fw-bolder">Apa Itu Bilangan Biner?</h5>
+            <p class="card-text fw-bold" data-aos="fade-right">  Bilangan biner adalah sistem bilangan yang hanya menggunakan dua angka, yaitu: 1 dan 0.  Sistem ini disebut juga sistem basis 2 (karena cuma ada dua angka).Ini beda dari sistem desimal yang biasa kita pakai sehari-hari (basis 10: 0 sampai 9).
+              <strong >Kenapa Komputer Pakai Biner?</strong>
+              Komputer itu cuma ngerti dua hal: nyala (1) dan mati (0). Jadi semua data di komputer — teks, gambar, suara — semuanya diwakilkan dengan kode biner.
+               Contoh: <br>
+              Huruf <strong>A</strong> di komputer = <code>01000001</code> (kode ASCII dalam biner)<br>
+              <strong>Cara Kerja Bilangan Biner:</strong><br>
+              Biner: 1 0 1 1<br>
+              Posisi: 3 2 1 0<br>
+              Nilai: 2³ + 2² + 2¹ + 2⁰ = 8 + 0 + 2 + 1 = <strong>11</strong> (Desimal)</p>
+            </div>
+          </div>
+        </div>
+        <!-- BAGIAN KONFERSI -->
+      <div class="container gradeGray mb-4 col-12 col-lg" id="biner" style="border-radius: 20px; box-shadow: 5px 5px 10px white;" data-aos="fade-left">
+        <h2>Konversi Angka ke Biner</h2>
+        <label for="angka">Masukkan Angka:</label>
+        <input type="text" id="angka" placeholder="Contoh: 10, 1A, 25" style="border-radius: 15px; padding: 10px;" class="text-black">
+
+        <label for="tipe">Pilih Tipe Angka:</label>
+        <select id="tipe" class="text-black" style="border-radius: 15px; padding: 10px;">
+            <option value="desimal" class="text-black">Desimal</option>
+            <option value="heksa" class="text-black">Heksadesimal</option>
+            <option value="oktal" class="text-black">Oktal</option>
+        </select>
+
+        <div class="text-center mt-4">
+          <button onclick="konversiKeBiner()" class="tombol" style="border-radius: 20px; ">Konversi ke Biner</button>
+
+        </div>
+
+        <div id="hasil"></div>
+      </div>
+      </div>
+      
+   </main>
+
+
+   <script src="biner.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

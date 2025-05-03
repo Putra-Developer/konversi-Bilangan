@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  <title>Binner</title>
+  <title>Biner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="desain.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        :root{
+            --morpheus: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            --profil:linear-gradient(to right, #000000, #434343); 
+        }
+
+        .extrabold:hover{
+        font-weight: 800;
+        }
+
+        .noto-sans-uniquifier {
+          font-family: "Noto Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+        }
+        .kepala{
+            background-image: var(--profil);
+            background-position: right;
+            animation: geser 2s infinite alternate-reverse;
+            background-size: 150% auto;
+        }
+
+        .boldonse-regular {
+          font-family: "Boldonse", system-ui;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+
+        @keyframes geser {
+            0%{
+                background-position: right;
+            }
+            
+            100%{
+                background-position: left;
+            }
+
+        }
+
+        .noto-sans-uniquifier {
+          font-family: "Noto Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+          
+        }
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .bg-biru{
+          min-height: 100vh;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-image:url(foto/kodePP.jpg)
+        }
+
+        .bg-skil{
+          background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        }
+
+        .textbs {
+          font-family: "Red Rose", serif;
+          font-optical-sizing: auto;
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        
+        .btn-grad {
+          background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
+          margin: 10px;
+          padding: 15px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          font-weight: bold;
+          color: black;            
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+        }
+        .btn-grad:hover {
+          background-position: right center;
+          color: #fff;
+          text-decoration: none;
+        }
+         
+    </style>
+  
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg kepala p-3 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand noto-sans-uniquifier" href="index.html" style="color: #fff;">ISPKCY</a>
+
+       <!-- BAGIAN HUMBURGER/TOMBOL -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="desimal.html">Desimal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Biner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="heksaD.html">HeksaD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="Oktal.html">Oktal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="profil.html">Profil Developer</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div  class="bg-biru h-100 p-5 overflow-hidden">
+      <div class="text-white d-flex justify-content-between" style="height: 500px;">
+        <div class="col-lg-4 boldonse-regular d-sm-flex" data-aos="fade-down-right">
+          <h2>HALO CODERS</h2>
+        </div>
+        <div class="p-4 text-center ms-lg-auto col-lg-5 rounded-5 textbs col-7 col-xl-3 mt-auto" style="backdrop-filter: blur(20px);" data-aos="fade-down-left">
+          <p>Selamat Datang Di Tempat belajar dan eksplorasi sistem bilangan: Desimal, Biner, Oktal, dan Heksadesimal.</p>
+          <p>Terima kasih telah mengunjungi situs ini. Semoga bermanfaat dalam membantu pemahaman Anda tentang konversi sistem bilangan dalam dunia digital!</p>
+          <p>Di bawah ini terdapat web portofolio saya yang dapat kamu akses</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-5" style="background: linear-gradient(to right, #232526, #414345);">
+      <div class="text-center p-4">
+        <h1 style="color: #fff; font-weight: 900;">MY WEBSITE</h1>
+        
+      </div>
+      <div class="row text-center" style="margin-bottom: 60px;">
+        <div class="col-lg-6 col-12" data-aos="fade-up">
+          <img src="foto/web3.png" alt="web3" style="margin-top: 10px; height:280px; width:100% ; object-fit: contain;">
+          <a href="https://putra-developer.github.io/PUTRA-PRATAMA/"><button class="btn-grad">KUNJUNGI</button></a>
+        </div>
+        <div class="col-lg-6 col-12" data-aos="fade-up">
+          <img src="foto/web2.png" style="height:300px; width:100% ; object-fit: contain;" alt="web2">
+          <a href="https://putra-developer.github.io/portofolio2/"><button class="btn-grad">KUNJUNGI</button></a>
+        </div>
+      </div>
+      <div class="d-flex row" data-aos="fade-down">
+        <div class="m-auto text-center col-12">
+          <img src="foto/web1.png" style="width: 100%; height: 300px; object-fit: contain;" alt="web1">
+          <a href="https://putra-developer.github.io/testing/"><button class="btn-grad">KUNJUNGI</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-skil p-5">
+      <div class="text-center text-white">
+        <h1>MY SKILL</h1>
+      </div>
+      <div class="row mb-4">
+        <div class="col-2" data-aos="fade-up">
+          <img src="foto/html.webp" alt="" style="height: 150px; width: 100%; object-fit: contain;">
+        </div>
+        <div class="col-2" data-aos="fade-down">
+          <img src="foto/CSS.png" alt="" style="height: 150px; width: 100%; object-fit: contain;"></div>
+        <div class="col-2" data-aos="fade-up">
+          <img src="foto/Java Script.png" alt="" style="height: 150px; width: 100%; object-fit: contain;">
+        </div>
+        <div class="col-2" data-aos="fade-down">
+          <img src="foto/Java.png" alt="" style="height: 150px; width: 100%; object-fit: contain;">
+        </div>
+        <div class="col-2" data-aos="fade-up">
+          <img src="foto/botstrap.png" alt="" style="height: 150px; width: 100%; object-fit: contain;">
+        </div>
+        <div class="col-2" data-aos="fade-down">
+          <img src="foto/figma.png" alt="" style="height: 150px; width: 100%; object-fit: contain;">
+        </div>
+      </div>
+      <div class="text-white text-center mt-5">
+        <h1>MEDIA</h1>
+      </div>
+      <div class="d-flex">
+        <div class="m-auto row w-100">
+          <div class="col" data-aos="fade-left">
+            <a href=""><img src="foto/github.png" alt="github" style="object-fit: contain; height: 100px; width: 100%; "></a></div>
+          <div class="col" data-aos="fade-left">
+            <a href="https://www.instagram.com/putra__syarif?igsh=MXRiendzcW80NzBlNg=="><img src="foto/Ig Logo.png" alt="instagram" style="object-fit: contain; height: 100px; width: 100%; "></a></div>
+          <div class="col" data-aos="fade-right">
+            <a href="https://www.tiktok.com/@iqbal_yt_?_t=ZS-8u9PSnLJvKp&_r=1"><img src="foto/Tik Tok Logo.png" alt="tiktok" style="object-fit: contain; height: 100px; width: 100%; "></a>
+          </div>
+            <div class="col" data-aos="fade-right">
+            <a href="https://www.facebook.com/share/18MkLtyJhG/?mibextid=qi2Omg"><img src="foto/fb.png" alt="facebook" style="object-fit: contain; height: 100px; width: 100%; "></a>
+          </div>
+
+        </div>
+    </div>
+  </main>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

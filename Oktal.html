@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oktal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="desain.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="oktal">
+    <style>
+        *{
+          color: aliceblue;
+        }
+        :root{
+          --HitamBiru:linear-gradient(145deg,rgba(30, 35, 38, 1) 11%, rgba(35, 133, 150, 1) 68%, rgba(57, 194, 204, 1) 100%);
+          --serverQuik:linear-gradient(to right, #485563, #29323c);
+          --liesBeyond:linear-gradient(90deg,rgba(2, 10, 120, 1) 0%, rgba(24, 138, 161, 1) 82%, rgba(92, 224, 132, 1) 100%);
+        }
+        
+        .extrabold:hover{
+          font-weight: 800;
+        }
+
+        .noto-sans-uniquifier {
+          font-family: "Noto Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+          
+        }
+        .bi{
+          text-align: center;
+          padding: 35px;
+          background-image: linear-gradient( 180.4deg,  rgba(0,6,10,1) 1%, rgba(1,190,237,1) 91.4% );
+        }
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .hdr{
+          background-image: var(--liesBeyond);
+          background-size: 150%;
+          animation: bgkiri 2s infinite alternate-reverse;
+          background-position: right;
+        }
+      
+        @keyframes bgkiri{
+          0%{
+            background-position: right;
+          }
+      
+          100%{
+            background-position: left;
+          }
+          
+        }
+
+        #angka:focus{
+          color: black;
+          background-color: antiquewhite;
+        }
+      
+        .oktal{
+          background-image: url('foto/oktal.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          min-height: 100vh;
+        }
+      
+        .bupe{
+          background: linear-gradient(to right, #00416a, #e4e5e6);
+        }
+
+        
+      
+        .btn-grad {
+          background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+          margin: 10px;
+          padding: 10px 35px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;       
+          font-weight: bold;     
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+        }
+        
+        .btn-grad:hover {
+          background-position: right center;
+          color: #fff;
+          text-decoration: none;
+        }
+      </style>
+         
+         
+        <!-- HEADER -->
+      <nav class="navbar navbar-expand-lg hdr p-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand noto-sans-uniquifier" style="color: #fff;" href="index.html">ISPK</a>
+
+           <!-- BAGIAN HUMBURGER/TOMBOL -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="desimal.html">Desimal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Biner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="heksaD.html">HeksaD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="#oktal">Oktal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="profil.html">Profil Developer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- TEXT DESCRIPSI -->
+   <div class="w-100 text-center">
+    <div class="biner d-flex justify-content-end" style="height: 100vh">
+      <div class=" text-center align-content-center p-3" style="backdrop-filter: blur(5px);" data-aos="zoom-in-left">
+        <h3 class="text-white extrabold text-decoration-underline">DBH TO OKTAL</h3>
+        <p class="text-white sm:hidden">Ayo ubah bilangan yang ingin kamu inginkan ke dalam angka oktal dengan cepat <br>tanpa harus menghitung dari awal dengan website ini akan mempermudah <br>urusan kamu dalam mengerjakan tugas dan lain-lainnya seperlu kamu. Gunakan <br>sebaiknya dan jangan lupa untuk mengenal siapa developernya ya. </p>
+      </div>
+     </div>
+   </div>
+
+   <div class="p-4" style="margin-bottom:20px ;">
+    <div class="row">
+
+      <div class="col-12 col-lg-5 bi" style="border-radius: 30px; box-shadow: 5px 5px 10px white;" id="oktal" data-aos="fade-up">
+          <h2>🔢 Konversi Bilangan ke Oktal</h2>
+
+          <label for="angka">Masukkan Bilangan:</label><br>
+          <input type="text" id="angka" placeholder="Contoh: 1F" style="border-radius: 12px; margin: 10px; padding: 10px; width: 100%; color:black;"><br>
+
+          <label for="tipe">Pilih Tipe Bilangan:</label><br>
+          <select id="tipe" style="color: black; border-radius: 12px; margin: 10px; padding: 10px; width: 100%;">
+          <option value="desimal" style="color: black;">Desimal</option>
+          <option value="heksa" style="color: black;">Heksadesimal</option>
+          <option value="biner" style="color: black;">Biner</option>
+          </select><br>
+
+          <button onclick="konversiKeOktal()" class="btn-grad" style="margin: 15px; border-radius: 15px;">Konversi ke Oktal</button>
+
+          <div id="hasil" ></div>
+      </div>
+        <div class="col-12 col-lg-7 text-center mt-3 p-3" style="backdrop-filter: blur(10px); border-radius: 20px;" data-aos="fade-down">
+            <h2 class="fw-bold text-decoration-underline" >APA ITU OKTAL</h2>
+            <p>Bilangan oktal adalah sistem bilangan berbasis delapan yang menggunakan 8 simbol (0, 1, 2, 3, 4, 5, 6, 7) untuk mewakili nilai angka. Sistem bilangan oktal sering digunakan dalam sistem digital dan pemrograman karena kemampuannya untuk menyederhanakan representasi bilangan biner yang panjang menjadi format yang lebih mudah dibaca. </p>
+        </div>
+
+
+
+    </div>
+   </div>
+
+   <script src="oktal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

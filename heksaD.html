@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  <title>Binner</title>
+    <title>Biner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="desain.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="biner" >
+    <style>
+      *{
+        color: aliceblue;
+      }
+      :root{
+      --HitamBiru:linear-gradient(145deg,rgba(30, 35, 38, 1) 11%, rgba(35, 133, 150, 1) 68%, rgba(57, 194, 204, 1) 100%);
+      --serverQuik:linear-gradient(to right, #485563, #29323c);
+      --heksaD :linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(8, 8, 115, 1) 70%, rgba(6, 54, 69, 1) 100%);
+      }
+
+      .hdr{
+        background-image: var(--heksaD);
+        background-size: 150%;
+        animation: bgkiri 2s infinite alternate-reverse;
+        background-position: right;
+      }
+
+      @keyframes bgkiri{
+        0%{
+          background-position: right;
+        }
+
+        100%{
+          background-position: left;
+        }
+        
+      }
+
+      .biner{
+        background-image: url('foto/bumiT.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .tombol {
+        background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 10px;
+        color: aliceblue;
+      }
+      .tombol:hover {
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .extrabold:hover{
+        font-weight: 800;
+      }
+            
+      .noto-sans-uniquifier {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+          
+      }
+      .bupe{
+        background: linear-gradient(to right, #00416a, #e4e5e6);
+      }
+    </style>
+    <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg hdr p-3 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand noto-sans-uniquifier" href="index.html">ISPK</a>
+
+       <!-- BAGIAN HUMBURGER/TOMBOL -->
+      <button class="navbar-toggler" style="color: #eee;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- BAGIAN NAVIGASI -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="desimal.html">Desimal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="index.html">Biner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="#heksa">HeksaD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="Oktal.html">Oktal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active extrabold" style="color: #fff;" aria-current="page" href="profil.html">Profil Developer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TEXT DESCRIPSI -->
+   <div class="w-100 d-grid">
+     <div class="biner d-flex">
+       <div class="m-auto text-center p-4" data-aos="zoom-in" style="backdrop-filter: blur(10px); border-radius: 20px;">
+         <h3 class="text-white extrabold text-decoration-underline">DBO TO HEKSADESIMAL</h3>
+         <p class="text-white sm:hidden">Ayo ubah bilangan yang ingin kamu inginkan ke dalam angka Heksadesimal dengan cepat <br>tanpa harus menghitung dari awal dengan website ini akan mempermudah <br>urusan kamu dalam mengerjakan tugas dan lain-lainnya seperlu kamu. Gunakan <br>sebaiknya dan jangan lupa untuk mengenal siapa developernya ya. </p>
+       </div>
+      </div>
+    </div>
+
+
+    <!-- PENJELASAN HEKSADESIMAL -->
+    <div class="p-5 overflow-hidden">
+      <div class="row">
+        <div class="p-4 text-center col-12 col-lg" style="backdrop-filter: blur(10px); border-radius: 20px;" data-aos="fade-left">
+          <h2 class="text-decoration-underline">APA ITU HEKSADESIMAL</h2>
+          <p>Heksadesimal adalah sistem bilangan basis-16 yang menggunakan 16 simbol (0-9 dan A-F) untuk mewakili nilai. Dalam sistem ini, A-F mewakili angka 10-15. Contohnya, nilai desimal 10 dalam heksadesimal adalah A, dan 15 adalah F. Heksadesimal sering digunakan dalam komputer untuk mewakili kode, nilai, dan warna karena lebih ringkas dibandingkan sistem biner.</p>
+         </div>
+         
+
+         <!-- BAGIAN KONVERSI ANGKA KE HEKSADESIMAL -->
+        <div class="col-12 col-lg m-auto mb-5 bupe" id="heksa" style="border-radius: 16px; padding: 20px; box-sizing: border-box; box-shadow: -5px 5px 14px white;" data-aos="fade-right">
+          <h2 class="text-center" style="color: #333333;">Konversi Bilangan ke Heksadesimal</h2>
+
+          <!-- INPUT ANGKA -->
+          <label for="input" class="m-3" style="font-weight: 500;">Masukkan Angka:</label>
+          <input type="text" style="border-radius: 12px; padding: 10px; width: 100%;" id="input" class="text-black" placeholder="Contoh: 1010, 255, 377"><br><br>
+
+          <!-- TYPE/JENIS ANGKA YANG MAU DI INPUT -->
+          <label for="tipe" class="m-3" style="font-weight: 500;">Pilih Tipe Bilangan:</label>
+          <select id="tipe" style="border-radius: 12px; padding: 10px; width: 100%; color: black;">
+            <option value="biner" class="text-black">Biner</option>
+            <option value="desimal" class="text-black">Desimal</option>
+            <option value="oktal" class="text-black">Oktal</option>
+          </select><br><br>
+          
+          <!-- BAGIAN TOMBOL KONVERSI -->
+          <div class="text-center">
+            <button onclick="konversi()"
+             class="text-white tombol" id="tekan">Konversi ke Heksadesimal</button>
+      
+          </div>
+        
+          <h3 class="mt-5 text-center"><span id="hasil"></span></h3>
+        
+        </div>
+      </div>
+    </div>
+    
+    <!-- SCRIPT JAVA SCRIPT -->
+   <script src="heksaD.js"></script>
+   <script src="desimal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
